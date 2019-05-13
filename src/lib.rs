@@ -41,6 +41,7 @@ use usvg::lyon_geom;
 
 #[cfg(feature = "cairo-backend")] pub mod backend_cairo;
 #[cfg(feature = "qt-backend")] pub mod backend_qt;
+#[cfg(feature = "piet-backend")] pub mod backend_piet;
 
 pub mod utils;
 mod backend_utils;
@@ -170,6 +171,11 @@ pub fn default_backend() -> Box<Render> {
     #[cfg(feature = "qt-backend")]
     {
         return Box::new(backend_qt::Backend);
+    }
+
+    #[cfg(feature = "piet-backend")]
+    {
+        return Box::new(backend_piet::Backend);
     }
 
     unreachable!("at least one backend must be enabled")
