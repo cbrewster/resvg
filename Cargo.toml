@@ -38,9 +38,14 @@ pangocairo = { version = "0.7", optional = true }
 # qt backend
 resvg-qt = { path = "resvg-qt", version = "0.6", optional = true }
 
+# piet backend
+piet = { path="../piet/piet", optional = true }
+piet-common = { path="../piet/piet-common", optional = true }
+
 [features]
 cairo-backend = ["cairo-rs", "gdk-pixbuf", "pango", "pangocairo"]
 qt-backend = ["resvg-qt"]
+piet-backend = ["piet", "piet-common"]
 
 [package.metadata.docs.rs]
 all-features = true
