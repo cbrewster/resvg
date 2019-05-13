@@ -1063,6 +1063,7 @@ dependencies = [
  "cairo-rs 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "gdk-pixbuf 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "image 0.20.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "kurbo 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "pango 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "pangocairo 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
